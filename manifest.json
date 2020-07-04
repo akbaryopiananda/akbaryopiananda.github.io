@@ -1,0 +1,58 @@
+{
+    "name": "Football News",
+    "gcm_sender_id": "398114703736",
+    "short_name": "Football",
+    "lang": "id-ID",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "img/72.webp",
+        "sizes": "72x72",
+        "type": "image/webp"
+      },
+      {
+        "src": "img/100.webp",
+        "sizes": "100x100",
+        "type": "image/webp"
+      },
+      {
+        "src": "img/128.webp",
+        "sizes": "128x128",
+        "type": "image/webp"
+      },
+      {
+        "src": "img/144.webp",
+        "sizes": "144x144",
+        "type": "image/webp"
+      },
+      {
+        "src": "img/196.webp",
+        "sizes": "196x196",
+        "type": "image/webp"
+      },
+      {
+        "src": "img/192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "img/256.webp",
+        "sizes": "256x256",
+        "type": "image/webp"
+      },
+      {
+        "src": "img/512.webp",
+        "sizes": "512x512",
+        "type": "image/webp"
+      },
+      {
+        "src": "img/512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }

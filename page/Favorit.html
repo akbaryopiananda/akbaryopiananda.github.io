@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Football News</title>
+        <link rel="icon" type="image/webp" href="/img/72.webp">
+        <meta name="description" content="Football News">
+        <link rel="stylesheet" href="/css/materialize.min.css">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="apple-touch-icon" href="/img/512.webp">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="theme-color" content="#bdbdbd">
+    </head>
+    <body class="green lighten-4 lighten-1">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <ul id="nav-mobile">
+                    <li>
+                        <a href="/index.html"><i class="material-icons black-text">arrow_back</i></a>
+                    </li>
+                </ul>
+                <a href="#" class="brand-logo center" id="logo-container">
+                    <img src="/img/100.webp" alt="icon" width="40%">
+                    <span class="black-text"></span>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <blockquote>
+                        <h3 class="left-align white-text"><img src="/img/512.webp" alt="icon" width="50px">  Favorite</h3>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col s12 m7" id="bodycontent">
+                <div class="progress">
+                    <div class="indeterminate"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="white">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="black-text">The Football News</h5>
+                        <p class="black-text text-lighten-4">Informasi Pertandingan sepak bola internasional</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="black-text">Links</h5>
+                        <ul>
+                            <li><a class="black-text text-lighten-3" href="#!"> <img src="/img/instagram.png" alt="instagram" width="30px"> <img src="/img/youtube.png" alt="youtube" width="30px"> <img src="/img/tweet.png" alt="twitter" width="30px"> <img src="/img/facebook.png" alt="twitter" width="30px"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright green center">
+                © 2020 Copyright by yopian
+            </div>
+        </footer>
+        <script src="/js/materialize.min.js"></script>
+        <script src="/js/api.js"></script>
+        <script src="/js/idb.js"></script>
+        <script src="/js/db.js"></script>
+        <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function(){
+                navigator.serviceWorker
+                .register("/service-worker.js")
+                .then(function() {
+                    console.log("Pendaftaran service wroker berhasil");
+                })
+                .catch(function() {
+                    console.log("Pendaftaran service worker gagal");
+                });
+            });
+        } else {
+            console.log("serviceworker belum didukung di browser");
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            getSavedTeams()
+        });
+        </script>
+    </body>
+</html>
